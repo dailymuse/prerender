@@ -1,6 +1,6 @@
 var prerender = require('./lib')
 
-var server = prerender({
+var server = prerender.create({
     workers: process.env.PHANTOM_CLUSTER_NUM_WORKERS,
     workerIterations: process.env.PHANTOM_WORKER_ITERATIONS || 10,
     workerParallelism: process.env.PHANTOM_WORKER_PARALLELISM || 1,
